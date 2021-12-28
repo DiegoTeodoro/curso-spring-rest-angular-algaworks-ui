@@ -6,6 +6,16 @@ body {
     color: #404C51;
 }
 
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover, a:focus{
+ 
+  text-decoration: underline;
+}
+
 label{
     font-weight: bold;
 }
@@ -69,4 +79,7 @@ label{
     .col-acoes .p-button {
       margin: 1px;
     }
+  }
+  .p-button {
+    margin-right: .25em
   }
