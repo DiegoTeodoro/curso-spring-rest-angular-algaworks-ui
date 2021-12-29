@@ -11,6 +11,7 @@ import { TableModule } from 'primeng/table';
 import { TabViewModule } from 'primeng/tabview';
 import { TooltipModule } from 'primeng/tooltip';
 import { DropdownModule} from 'primeng/dropdown';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 import { AppComponent } from './app.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
@@ -40,7 +41,8 @@ import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.co
     TableModule,
     TabViewModule,
     TooltipModule,
-    DropdownModule
+    DropdownModule,
+    InputNumberModule
     
   ],
   providers: [],
