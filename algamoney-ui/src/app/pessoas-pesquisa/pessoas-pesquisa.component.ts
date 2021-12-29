@@ -5,7 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pessoas-pesquisa.component.html',
   styleUrls: ['./pessoas-pesquisa.component.css']
 })
-export class PessoasPesquisaComponent {
+export class PessoasPesquisaComponent{
+
   pessoas = [
     { nome: 'Manoel Pinheiro', cidade: 'Uberlândia', estado: 'MG', ativo: true },
     { nome: 'Sebastião da Silva', cidade: 'São Paulo', estado: 'SP', ativo: false },

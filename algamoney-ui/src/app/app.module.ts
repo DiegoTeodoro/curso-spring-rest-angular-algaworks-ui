@@ -2,20 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {InputTextModule} from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
-import {TooltipModule} from 'primeng/tooltip';
-import {InputTextareaModule} from 'primeng/inputtextarea';
-import {CalendarModule} from 'primeng/calendar';
-
+import { TabViewModule } from 'primeng/tabview';
+import { TooltipModule } from 'primeng/tooltip';
+import { DropdownModule} from 'primeng/dropdown';
 
 import { AppComponent } from './app.component';
+import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
-import { SelectButtonModule } from 'primeng/selectbutton/selectbutton';
+
+
 
 @NgModule({
   declarations: [
@@ -28,18 +31,19 @@ import { SelectButtonModule } from 'primeng/selectbutton/selectbutton';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    InputTextModule,
+
     ButtonModule,
-    TableModule,
-    TooltipModule,
-    InputTextareaModule,
     CalendarModule,
-    SelectButtonModule
-  
+    InputTextModule,
+    InputTextareaModule,
+    SelectButtonModule,
+    TableModule,
+    TabViewModule,
+    TooltipModule,
+    DropdownModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-  
-}
+export class AppModule { }
