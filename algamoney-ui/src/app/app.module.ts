@@ -2,50 +2,34 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { ButtonModule } from 'primeng/button';
-import { CalendarModule } from 'primeng/calendar';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputTextareaModule } from 'primeng/inputtextarea';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TableModule } from 'primeng/table';
-import { TabViewModule } from 'primeng/tabview';
-import { TooltipModule } from 'primeng/tooltip';
-import { DropdownModule} from 'primeng/dropdown';
-import { InputNumberModule } from 'primeng/inputnumber';
+
 
 import { AppComponent } from './app.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
-import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
+import { LancamentosModule } from './lancamentos/lancamentos.module';
+import { PessoasModule } from './pessoas/pessoas.module';
+import { CoreModule } from './core/core.module';
+import { LancamentoService } from './lancamentos/lancamento.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LancamentosPesquisaComponent,
-    NavbarComponent,
-    PessoasPesquisaComponent,
-    LancamentoCadastroComponent
+    AppComponent
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
 
-    ButtonModule,
-    CalendarModule,
-    InputTextModule,
-    InputTextareaModule,
-    SelectButtonModule,
-    TableModule,
-    TabViewModule,
-    TooltipModule,
-    DropdownModule,
-    InputNumberModule
+    LancamentosModule,
+    PessoasModule,
+    CoreModule,
+    HttpClientModule
+
     
   ],
-  providers: [],
+  providers: [LancamentoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
