@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
-import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
 
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
@@ -21,7 +20,6 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     PessoaCadastroComponent,
     PessoasPesquisaComponent,
-    PessoasGridComponent
   ],
   exports:[
     PessoaCadastroComponent,

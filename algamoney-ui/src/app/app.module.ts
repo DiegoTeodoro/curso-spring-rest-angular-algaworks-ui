@@ -10,7 +10,8 @@ import { PessoasModule } from './pessoas/pessoas.module';
 import { CoreModule } from './core/core.module';
 import { LancamentoService } from './lancamentos/lancamento.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast'
 
 
 @NgModule({
@@ -25,11 +26,13 @@ import { HttpClientModule } from '@angular/common/http';
     LancamentosModule,
     PessoasModule,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule
 
     
   ],
-  providers: [LancamentoService],
-  bootstrap: [AppComponent]
+  providers: [LancamentoService,MessageService],
+  bootstrap: [AppComponent],
+ 
 })
 export class AppModule { }
